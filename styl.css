@@ -1,0 +1,55 @@
+*{
+    font-family: 'Century Gothic', Verdana, sans-serif;
+}
+body{
+    background-color: #F0EAE2;
+}
+header, footer{
+    height: 60px;
+    color: white;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+.blok_nawigacyjny{
+    background-color: #824555;
+    height: 60px;
+    width: 80%;
+}
+.sekcja_boczna{
+    width: 20%;
+    height: 560px;
+    text-align: right;
+    overflow: hidden;
+}
+.sekcja_boczna img{
+    width: 100%;
+    grid-area: sekcja_boczna;
+}
+.blok_lewy{
+    grid-area: blok_lewy;
+}
+.sekcja_boczna, .blok_lewy{
+    width: 40%;
+    height: 500px;
+    overflow: auto;
+}
+h2{
+    text-align: center;
+}
+a{
+    color:#F0EAE2;
+    margin-left: 100px;
+    font-size: 180%;
+}
+a:hover{
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "blok_lewy sekcja_boczna" "footer footer";
+}
